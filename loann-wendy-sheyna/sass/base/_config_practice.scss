@@ -1,0 +1,43 @@
+// Global Config
+
+// Font Stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Oswald:400,300,700', 'http://weloveiconfonts.com/api/?family=fontawesome'
+
+
+$font-family--primary    : 'Oswald', 'Arial', sans-serif;
+
+$font-family--secondary  : 'Arial', sans-serif;
+
+// Font Weights
+
+$font-weight--light      : 300
+$font-weight--normal     : 400
+$font-weight--bold       : 700
+
+// Descriptive Base Colors
+
+$gray   : gray;
+$silver : silver;
+$red    : crimson;
+$white  : white;
+$black  : black;
+
+// Color Usage
+
+$color-primary    : $black
+$color-secondary  : $red
+$color-accent     : $gray
+$color-border     : $silver
+$color-default    : $white
+
+// Text
+
+$base__header       : 2em
+$base__font-size    : 1.2em
+$base__paragraph    : 8em
+$base__line         : normal
+
+// Path to Assets
+
+$path--rel       : "../images"

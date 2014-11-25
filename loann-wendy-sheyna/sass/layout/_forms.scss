@@ -1,0 +1,13 @@
+// Forms and Inputs
+
+form
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+  .search__input
+    @include inputs
+    color: crimson;
+  .email__input
+    @include inputs
+    border: 1px solid silver;
