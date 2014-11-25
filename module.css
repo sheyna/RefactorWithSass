@@ -1,16 +1,8 @@
-/**** General ****/
-
-/**** Can this go into base?? LL made changes ****/
-
-
 button {
-  border:none;
+  border: none;
   border-radius: .25em;
   padding: 1% 2%;
-  }
-
-/**** Can this go into base?? LL made changes ****/
-
+}
 button a {
   font-size: .8em;
   text-decoration: none;
@@ -18,7 +10,11 @@ button a {
   text-align: center;
 }
 video {
+  display: none;
   width: 100%;
+}
+h2 {
+  display: none;
 }
 
 /******   logo ********/
@@ -32,9 +28,8 @@ video {
 /**Header__Logo and Logo img LL made changes **/
 
 .header__logo {
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
-
 .header__logo img {
   width: 350px;
   display: block;
@@ -43,26 +38,20 @@ video {
 
 /****** search and email input ********/
 
-/** Made changes to all inputs
-Can FORM go into BASE?? **/
-
-
 form {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 5%;
 }
-
 .search__input {
-  width:100%;
+  width: 75%;
   margin-right: .7em;
-  color:crimson;
+  color: crimson;
   padding: 2%;
 }
-
 .email__input {
-  width:100%;
+  width: 75%;
   margin-right: .7em;
   border: 1px solid silver;
   padding: 2%;
@@ -73,59 +62,48 @@ form {
 .fontawesome-search,
 .fontawesome-envelope {
   font-size: 1.5em;
-  color:crimson;
+  color: crimson;
   background-color: transparent;
 }
 
 /******   NAVIGATION   ********/
 
-/** LL made changes **/
-
-
 nav {
-  margin: 0 10% 7% 8%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  margin-bottom: 2%;
+}
+nav ul {
+  list-style-type: none;
+  flex-direction: column;
+  }
+nav li {
+  padding-left: 10%;
+  font-size: 1.25em;
 }
 nav a {
-  padding: 0 5%;
-  flex-basis: auto;
-  flex-grow: 1;
-  color:black;
+  padding: 0 15%;
   text-transform: uppercase;
   text-decoration: none;
+  color: black;
 }
-
-/** LL added **/
-
-/*span {
-  width:1em;
-}*/
-/** LL added **/
-
 time {
-  color:gray;
+  color: gray;
 }
-
 .blog-post {
-  margin-bottom:1%;
+  margin-bottom: 1%;
   padding: 3%;
   border: 1px solid silver;
   background-color: white;
 }
 .blog-post h1 {
-color: black;
-margin-left: 1.5%;
+  color: black;
 }
-.blog-post time {
-  padding-left: 2%;
-}
-.blog-post p {
-  margin-left: 2%;
-}
-.blog-post figure {
-  float: right;
+.blog-img img{
+display: block;
+width: 150px;
+margin: 0 auto;
+left: calc(100% - 100px/2);
 }
 .blog-post figcaption {
   font-size: 9px;
@@ -148,11 +126,9 @@ margin-left: 1.5%;
   padding-left: 2%;
 }
 .comments {
-  height:auto;
-  margin-bottom:1%;
+  margin-bottom: 1%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   border: 1px solid silver;
   padding: 1em;
 }
@@ -167,12 +143,10 @@ margin-left: 1.5%;
   font-size: .7em;
   font-style: light;
 }
-
 .comments h5 {
 font-size: .7em;
 color: crimson;
 }
-
 .comments-response li {
   margin: 0 auto;
   display: flex;
@@ -182,4 +156,74 @@ color: crimson;
 .comments-response a {
   color: black;
   text-decoration: none;
+}
+aside {
+  padding: 0 1%;
+}
+footer {
+  background-color: gray;
+  width: 100%;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer li {
+  text-align: center;
+  width: 100%;
+  margin: 1% 2%;
+  display: block;
+}
+footer aside {
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+
+  video {
+    display: inline-block;
+  }
+  h2 {
+    display: inline-block;
+  }
+  figure {
+    padding-left: 3%;
+    float: right;
+    margin: 1% auto;
+    left: calc(100% - 100px/2);
+  }
+  footer {
+    background-color: gray;
+    width: 100%;
+  }
+  footer ul {
+    margin: 1% ;
+  }
+  footer li {
+    margin: 1% 2%;
+    display: inline;
+  }
+  footer aside {
+    text-align: right;
+    padding-top: .5%;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    padding: 0 5%;
+    color: black;
+    text-transform: uppercase;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav li {
+    align-content: space-between;
+    justify-content: center;
+    display: inline-block;
+    padding: 0 2%;
+  }
 }
